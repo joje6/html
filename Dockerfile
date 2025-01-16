@@ -1,5 +1,6 @@
-FROM nginxinc/nginx-unprivileged:1.23 AS runner
+FROM nginxinc/nginx-unprivileged AS runner
 WORKDIR /usr/share/nginx/html
+
 COPY ./ ./
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
