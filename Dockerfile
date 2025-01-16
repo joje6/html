@@ -1,11 +1,11 @@
 FROM nginxinc/nginx-unprivileged AS runner
 WORKDIR /usr/share/nginx/html
 
-RUN mkdir -p /var/cache/nginx/client_temp && chmod 755 /var/cache/nginx/client_temp
-RUN mkdir -p /var/cache/nginx/proxy_temp && chmod 755 /var/cache/nginx/proxy_temp
-RUN mkdir -p /var/cache/nginx/fastcgi_temp && chmod 755 /var/cache/nginx/fastcgi_temp
-RUN mkdir -p /var/cache/nginx/uwsgi_temp && chmod 755 /var/cache/nginx/uwsgi_temp
-RUN mkdir -p /var/cache/nginx/scgi_temp && chmod 755 /var/cache/nginx/scgi_temp
+# RUN mkdir -p /var/cache/nginx/client_temp && chmod 755 /var/cache/nginx/client_temp
+# RUN mkdir -p /var/cache/nginx/proxy_temp && chmod 755 /var/cache/nginx/proxy_temp
+# RUN mkdir -p /var/cache/nginx/fastcgi_temp && chmod 755 /var/cache/nginx/fastcgi_temp
+# RUN mkdir -p /var/cache/nginx/uwsgi_temp && chmod 755 /var/cache/nginx/uwsgi_temp
+# RUN mkdir -p /var/cache/nginx/scgi_temp && chmod 755 /var/cache/nginx/scgi_temp
 
 # RUN mkdir -p /var/cache/nginx/client_temp && \
 #         mkdir -p /var/cache/nginx/proxy_temp && \
